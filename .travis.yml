@@ -1,0 +1,25 @@
+sudo: false
+language: ruby
+rvm:
+- 2.4.2
+
+cache:
+- bundler
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
+branches:
+  only:
+  - master
+  - /^v\d+\.\d+\.\d+$/
+
+before_install: gem install bundler -v 1.16.1
+
+install:
+- bundle install
+
+script:
+- bundle exec rubocop

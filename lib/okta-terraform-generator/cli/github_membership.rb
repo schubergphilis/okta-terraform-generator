@@ -87,7 +87,7 @@ module OktaTerraformGenerator
 
       def admins
         @admin_group_id ||= okta_client.group_id(config[:okta_admin_group])
-        @admins ||= list_group_github_handles(@admin_group_id).map { |u| u.profile.login.downcase }.sort.map { |admin| admin.split('@').shift }
+        @admins ||= list_group_github_handles(@admin_group_id).map { |u| u.profile.login.downcase.split('@').shift }.sort
       end
 
       def github_handle(handle)
@@ -125,7 +125,7 @@ module OktaTerraformGenerator
       end
 
       def logins_and_github_handles(okta_group, group_id)
-        puts "Looking for active users in the Okta group \"#{okta_group}\" (#{group_id}) with the githubHandle profile attribute set ... "
+        puts "Looking for active users in Okta group \"#{okta_group}\" (with group id: #{group_id}) and the \"githubHandle\" profile attribute set ... "
         list_group_github_handles(group_id).map { |u| [u.profile.login.downcase, u.profile.githubHandle.downcase] }
       end
 
