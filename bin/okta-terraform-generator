@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'okta-terraform-generator/cli'
+
+generator = OktaTerraformGenerator::CLI.new.load_generator
+generator.run

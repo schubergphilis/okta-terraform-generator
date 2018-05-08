@@ -1,0 +1,36 @@
+PATH
+  remote: .
+  specs:
+    okta-terraform-generator (0.1.0)
+      facets (~> 3.1)
+      mixlib-cli (~> 1.7)
+      octokit (~> 4.0)
+      oktakit (~> 0.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    facets (3.1.0)
+    faraday (0.15.0)
+      multipart-post (>= 1.2, < 3)
+    mixlib-cli (1.7.0)
+    multipart-post (2.0.0)
+    octokit (4.9.0)
+      sawyer (~> 0.8.0, >= 0.5.3)
+    oktakit (0.2.0)
+      sawyer (~> 0.8.1)
+    public_suffix (3.0.2)
+    sawyer (0.8.1)
+      addressable (>= 2.3.5, < 2.6)
+      faraday (~> 0.8, < 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  okta-terraform-generator!
+
+BUNDLED WITH
+   1.16.1
