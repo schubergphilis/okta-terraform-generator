@@ -33,7 +33,7 @@ module Oktakit
       end
 
       def group_id(group_name)
-        groups.select { |group| group[:profile][:name] =~ /^#{group_name}$/i }.shift.id
+        groups.select { |group| group[:type] == 'OKTA_GROUP' && group[:profile][:name] =~ /^#{group_name}$/i }.shift.id
       end
     end
   end
