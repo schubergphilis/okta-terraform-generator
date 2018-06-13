@@ -1,3 +1,7 @@
+Metrics/AbcSize:
+  Max: 20
+Metrics/BlockLength:
+  Max: 81
 Metrics/LineLength:
   Max: 152
 Naming/FileName:

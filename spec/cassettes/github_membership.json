@@ -1,0 +1,745 @@
+{
+    "http_interactions": [
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:26 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Authorization": [
+                        "SSWS  <<OKTA_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Oktakit v0.2.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://my-okta.okta.com/api/v1/groups"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "[{\"id\":\"00gdqt4doz0QC1eF40h7\",\"created\":\"2018-01-24T00:03:52.000Z\",\"lastUpdated\":\"2018-01-24T00:03:52.000Z\",\"lastMembershipUpdated\":\"2018-01-25T20:30:34.000Z\",\"objectClass\":[\"okta:user_group\"],\"type\":\"BUILT_IN\",\"profile\":{\"name\":\"Everyone\",\"description\":\"All users in your organization\"},\"_links\":{\"logo\":[{\"name\":\"medium\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png\",\"type\":\"image/png\"},{\"name\":\"large\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png\",\"type\":\"image/png\"}],\"users\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gdqt4doz0QC1eF40h7/users\"},\"apps\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gdqt4doz0QC1eF40h7/apps\"}}},{\"id\":\"00gdrphd5bUykSq4u0h7\",\"created\":\"2018-01-25T20:18:48.000Z\",\"lastUpdated\":\"2018-01-25T20:18:48.000Z\",\"lastMembershipUpdated\":\"2018-01-25T20:24:52.000Z\",\"objectClass\":[\"okta:user_group\"],\"type\":\"OKTA_GROUP\",\"profile\":{\"name\":\"Family Guy\",\"description\":null},\"_links\":{\"logo\":[{\"name\":\"medium\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png\",\"type\":\"image/png\"},{\"name\":\"large\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png\",\"type\":\"image/png\"}],\"users\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gdrphd5bUykSq4u0h7/users\"},\"apps\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gdrphd5bUykSq4u0h7/apps\"}}},{\"id\":\"00gezhw5btNc7Dh1N0h7\",\"created\":\"2018-05-11T12:20:53.000Z\",\"lastUpdated\":\"2018-05-11T12:20:53.000Z\",\"lastMembershipUpdated\":\"2018-05-11T12:22:11.000Z\",\"objectClass\":[\"okta:user_group\"],\"type\":\"OKTA_GROUP\",\"profile\":{\"name\":\"github_admins\",\"description\":\"\"},\"_links\":{\"logo\":[{\"name\":\"medium\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png\",\"type\":\"image/png\"},{\"name\":\"large\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png\",\"type\":\"image/png\"}],\"users\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gezhw5btNc7Dh1N0h7/users\"},\"apps\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gezhw5btNc7Dh1N0h7/apps\"}}},{\"id\":\"00gezhx0w8mt5gjke0h7\",\"created\":\"2018-05-11T12:20:57.000Z\",\"lastUpdated\":\"2018-05-11T12:20:57.000Z\",\"lastMembershipUpdated\":\"2018-06-13T13:26:26.000Z\",\"objectClass\":[\"okta:user_group\"],\"type\":\"OKTA_GROUP\",\"profile\":{\"name\":\"github_users\",\"description\":null},\"_links\":{\"logo\":[{\"name\":\"medium\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png\",\"type\":\"image/png\"},{\"name\":\"large\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png\",\"type\":\"image/png\"}],\"users\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gezhx0w8mt5gjke0h7/users\"},\"apps\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gezhx0w8mt5gjke0h7/apps\"}}},{\"id\":\"00gdrpbvraOhKH6PF0h7\",\"created\":\"2018-01-25T20:18:49.000Z\",\"lastUpdated\":\"2018-01-25T20:18:49.000Z\",\"lastMembershipUpdated\":\"2018-01-25T20:30:35.000Z\",\"objectClass\":[\"okta:user_group\"],\"type\":\"OKTA_GROUP\",\"profile\":{\"name\":\"Simpsons\",\"description\":null},\"_links\":{\"logo\":[{\"name\":\"medium\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png\",\"type\":\"image/png\"},{\"name\":\"large\",\"href\":\"https://op1static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png\",\"type\":\"image/png\"}],\"users\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gdrpbvraOhKH6PF0h7/users\"},\"apps\":{\"href\":\"https://my-okta.okta.com/api/v1/groups/00gdrpbvraOhKH6PF0h7/apps\"}}}]"
+                },
+                "headers": {
+                    "cache-control": [
+                        "no-cache, no-store"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-type": [
+                        "application/json;charset=UTF-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:26 GMT"
+                    ],
+                    "expires": [
+                        "0"
+                    ],
+                    "link": [
+                        "<https://my-okta.okta.com/api/v1/groups?limit=10000>; rel=\"self\""
+                    ],
+                    "p3p": [
+                        "CP=\"HONK\""
+                    ],
+                    "pragma": [
+                        "no-cache"
+                    ],
+                    "public-key-pins-report-only": [
+                        "pin-sha256=\"jZomPEBSDXoipA9un78hKRIeN/+U4ZteRaiX8YpWfqc=\"; pin-sha256=\"axSbM6RQ+19oXxudaOTdwXJbSr6f7AahxbDHFy3p8s8=\"; pin-sha256=\"SE4qe2vdD9tAegPwO79rMnZyhHvqj3i5g1c2HkyGUNE=\"; pin-sha256=\"ylP0lMLMvBaiHn0ihLxHjzvlPVQNoyQ+rMiaj0da/Pw=\"; max-age=60; report-uri=\"https://okta.report-uri.io/r/default/hpkp/reportOnly\""
+                    ],
+                    "server": [
+                        "nginx"
+                    ],
+                    "set-cookie": [
+                        "sid=\"\"; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/, JSESSIONID=19FAC8B0A2F8B609C0179923782DDF78; Path=/; HttpOnly"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=315360000"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept-Encoding"
+                    ],
+                    "x-okta-request-id": [
+                        "WyEccl1SqXhyCYeeSm7NNwAABkU"
+                    ],
+                    "x-rate-limit-limit": [
+                        "500"
+                    ],
+                    "x-rate-limit-remaining": [
+                        "499"
+                    ],
+                    "x-rate-limit-reset": [
+                        "1528896686"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        },
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:26 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Authorization": [
+                        "SSWS  <<OKTA_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Oktakit v0.2.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://my-okta.okta.com/api/v1/groups/00gezhx0w8mt5gjke0h7/users"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "[{\"id\":\"00udrpjj9fsbpxCoN0h7\",\"status\":\"ACTIVE\",\"created\":\"2018-01-25T20:24:48.000Z\",\"activated\":\"2018-05-11T13:10:12.000Z\",\"statusChanged\":\"2018-05-11T13:24:26.000Z\",\"lastLogin\":\"2018-05-11T13:24:26.000Z\",\"lastUpdated\":\"2018-06-13T13:20:24.000Z\",\"passwordChanged\":\"2018-05-11T13:24:26.000Z\",\"profile\":{\"firstName\":\"Peter\",\"lastName\":\"Griffin\",\"mobilePhone\":null,\"githubHandle\":\"peter\",\"displayName\":\"Peter Griffin\",\"secondEmail\":null,\"login\":\"PeterGriffin@example.com\",\"email\":\"petergriffin@gmail.com\"},\"credentials\":{\"password\":{},\"emails\":[{\"value\":\"petergriffin@gmail.com\",\"status\":\"VERIFIED\",\"type\":\"PRIMARY\"}],\"recovery_question\":{\"question\":\"What is the food you least liked as a child?\"},\"provider\":{\"type\":\"OKTA\",\"name\":\"OKTA\"}},\"_links\":{\"self\":{\"href\":\"https://my-okta.okta.com/api/v1/users/00udrpjj9fsbpxCoN0h7\"}}},{\"id\":\"00udrpn3yw4Whp8mR0h7\",\"status\":\"ACTIVE\",\"created\":\"2018-01-25T20:24:51.000Z\",\"activated\":\"2018-05-11T13:16:34.000Z\",\"statusChanged\":\"2018-05-11T13:26:48.000Z\",\"lastLogin\":\"2018-05-11T13:26:48.000Z\",\"lastUpdated\":\"2018-06-13T13:27:00.000Z\",\"passwordChanged\":\"2018-05-11T13:26:48.000Z\",\"profile\":{\"firstName\":\"Chris\",\"lastName\":\"Griffin\",\"mobilePhone\":null,\"githubHandle\":\"chris\",\"displayName\":\"Chris Griffin\",\"secondEmail\":null,\"login\":\"ChrisGriffin@example.com\",\"email\":\"chrisgriffin@gmail.com\"},\"credentials\":{\"password\":{},\"emails\":[{\"value\":\"chrisgriffin@gmail.com\",\"status\":\"VERIFIED\",\"type\":\"PRIMARY\"}],\"recovery_question\":{\"question\":\"What is the food you least liked as a child?\"},\"provider\":{\"type\":\"OKTA\",\"name\":\"OKTA\"}},\"_links\":{\"self\":{\"href\":\"https://my-okta.okta.com/api/v1/users/00udrpn3yw4Whp8mR0h7\"}}},{\"id\":\"00udrpobkm2wS27sw0h7\",\"status\":\"ACTIVE\",\"created\":\"2018-01-25T20:30:34.000Z\",\"activated\":\"2018-05-11T13:20:17.000Z\",\"statusChanged\":\"2018-05-11T13:28:00.000Z\",\"lastLogin\":\"2018-05-11T13:28:00.000Z\",\"lastUpdated\":\"2018-05-11T13:28:00.000Z\",\"passwordChanged\":\"2018-05-11T13:28:00.000Z\",\"profile\":{\"firstName\":\"Bart\",\"lastName\":\"Simpson\",\"mobilePhone\":null,\"githubHandle\":\"bart\",\"displayName\":\"Bart Simpson\",\"secondEmail\":null,\"login\":\"BartSimpson@example.com\",\"email\":\"bartsimpson@gmail.com\"},\"credentials\":{\"password\":{},\"emails\":[{\"value\":\"bartsimpson@gmail.com\",\"status\":\"VERIFIED\",\"type\":\"PRIMARY\"}],\"recovery_question\":{\"question\":\"What is the food you least liked as a child?\"},\"provider\":{\"type\":\"OKTA\",\"name\":\"OKTA\"}},\"_links\":{\"self\":{\"href\":\"https://my-okta.okta.com/api/v1/users/00udrpobkm2wS27sw0h7\"}}},{\"id\":\"00udrpp8j7S5Q63KN0h7\",\"status\":\"ACTIVE\",\"created\":\"2018-01-25T20:30:31.000Z\",\"activated\":\"2018-05-11T13:21:45.000Z\",\"statusChanged\":\"2018-05-11T13:28:27.000Z\",\"lastLogin\":\"2018-05-11T13:28:27.000Z\",\"lastUpdated\":\"2018-05-11T13:28:27.000Z\",\"passwordChanged\":\"2018-05-11T13:28:27.000Z\",\"profile\":{\"firstName\":\"Homer\",\"lastName\":\"Simpson\",\"mobilePhone\":null,\"githubHandle\":\"homer\",\"displayName\":\"Homer Simpson\",\"secondEmail\":null,\"login\":\"HomerSimpson@example.com\",\"email\":\"homersimpson@gmail.com\"},\"credentials\":{\"password\":{},\"emails\":[{\"value\":\"homersimpson@gmail.com\",\"status\":\"VERIFIED\",\"type\":\"PRIMARY\"}],\"recovery_question\":{\"question\":\"What is the food you least liked as a child?\"},\"provider\":{\"type\":\"OKTA\",\"name\":\"OKTA\"}},\"_links\":{\"self\":{\"href\":\"https://my-okta.okta.com/api/v1/users/00udrpp8j7S5Q63KN0h7\"}}}]"
+                },
+                "headers": {
+                    "cache-control": [
+                        "no-cache, no-store"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-type": [
+                        "application/json;charset=UTF-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:26 GMT"
+                    ],
+                    "expires": [
+                        "0"
+                    ],
+                    "link": [
+                        "<https://my-okta.okta.com/api/v1/groups/00gezhx0w8mt5gjke0h7/users?limit=1000>; rel=\"self\""
+                    ],
+                    "p3p": [
+                        "CP=\"HONK\""
+                    ],
+                    "pragma": [
+                        "no-cache"
+                    ],
+                    "public-key-pins-report-only": [
+                        "pin-sha256=\"jZomPEBSDXoipA9un78hKRIeN/+U4ZteRaiX8YpWfqc=\"; pin-sha256=\"axSbM6RQ+19oXxudaOTdwXJbSr6f7AahxbDHFy3p8s8=\"; pin-sha256=\"SE4qe2vdD9tAegPwO79rMnZyhHvqj3i5g1c2HkyGUNE=\"; pin-sha256=\"ylP0lMLMvBaiHn0ihLxHjzvlPVQNoyQ+rMiaj0da/Pw=\"; max-age=60; report-uri=\"https://okta.report-uri.io/r/default/hpkp/reportOnly\""
+                    ],
+                    "server": [
+                        "nginx"
+                    ],
+                    "set-cookie": [
+                        "sid=\"\"; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/, JSESSIONID=EF16AE35083EEE7DFB08D6A5673B3CAB; Path=/; HttpOnly"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=315360000"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept-Encoding"
+                    ],
+                    "x-okta-request-id": [
+                        "WyEccjfHCpHGMfmtu0Oj5AAAEVg"
+                    ],
+                    "x-rate-limit-limit": [
+                        "500"
+                    ],
+                    "x-rate-limit-remaining": [
+                        "498"
+                    ],
+                    "x-rate-limit-reset": [
+                        "1528896686"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        },
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:27 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/vnd.github.v3+json"
+                    ],
+                    "Authorization": [
+                        "token <<GITHUB_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Octokit Ruby Gem 4.9.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://api.github.com/users/bart"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "{\"login\":\"bart\",\"id\":5200235,\"node_id\":\"MDQ6VXNlcjUyMDAyMzU=\",\"avatar_url\":\"https://avatars3.githubusercontent.com/u/5200235?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/bart\",\"html_url\":\"https://github.com/bart\",\"followers_url\":\"https://api.github.com/users/bart/followers\",\"following_url\":\"https://api.github.com/users/bart/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/bart/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/bart/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/bart/subscriptions\",\"organizations_url\":\"https://api.github.com/users/bart/orgs\",\"repos_url\":\"https://api.github.com/users/bart/repos\",\"events_url\":\"https://api.github.com/users/bart/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/bart/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Rene Bartkowiak\",\"company\":null,\"blog\":\"www.rene-bartkowiak.com\",\"location\":\"Berlin, Germany\",\"email\":null,\"hireable\":null,\"bio\":\"Head of something and Laravel enthusiast\",\"public_repos\":22,\"public_gists\":2,\"followers\":17,\"following\":1,\"created_at\":\"2013-08-09T21:58:26Z\",\"updated_at\":\"2018-05-22T21:05:27Z\"}"
+                },
+                "headers": {
+                    "access-control-allow-origin": [
+                        "*"
+                    ],
+                    "access-control-expose-headers": [
+                        "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval"
+                    ],
+                    "cache-control": [
+                        "private, max-age=60, s-maxage=60"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-security-policy": [
+                        "default-src 'none'"
+                    ],
+                    "content-type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:27 GMT"
+                    ],
+                    "etag": [
+                        "W/\"c95ee93f8c6fe4189e5af3106101bd48\""
+                    ],
+                    "last-modified": [
+                        "Tue, 22 May 2018 21:05:27 GMT"
+                    ],
+                    "referrer-policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "server": [
+                        "GitHub.com"
+                    ],
+                    "status": [
+                        "200 OK"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept, Authorization, Cookie, X-GitHub-OTP"
+                    ],
+                    "x-accepted-oauth-scopes": [
+                        ""
+                    ],
+                    "x-content-type-options": [
+                        "nosniff"
+                    ],
+                    "x-frame-options": [
+                        "deny"
+                    ],
+                    "x-github-media-type": [
+                        "github.v3; format=json"
+                    ],
+                    "x-github-request-id": [
+                        "56FC:7161:617A94:D4506F:5B211C72"
+                    ],
+                    "x-oauth-scopes": [
+                        "admin:org, repo"
+                    ],
+                    "x-ratelimit-limit": [
+                        "5000"
+                    ],
+                    "x-ratelimit-remaining": [
+                        "4987"
+                    ],
+                    "x-ratelimit-reset": [
+                        "1528899402"
+                    ],
+                    "x-runtime-rack": [
+                        "0.040018"
+                    ],
+                    "x-xss-protection": [
+                        "1; mode=block"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        },
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:27 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Authorization": [
+                        "SSWS  <<OKTA_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Oktakit v0.2.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://my-okta.okta.com/api/v1/groups/00gezhw5btNc7Dh1N0h7/users"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "[{\"id\":\"00udrpjj9fsbpxCoN0h7\",\"status\":\"ACTIVE\",\"created\":\"2018-01-25T20:24:48.000Z\",\"activated\":\"2018-05-11T13:10:12.000Z\",\"statusChanged\":\"2018-05-11T13:24:26.000Z\",\"lastLogin\":\"2018-05-11T13:24:26.000Z\",\"lastUpdated\":\"2018-06-13T13:20:24.000Z\",\"passwordChanged\":\"2018-05-11T13:24:26.000Z\",\"profile\":{\"firstName\":\"Peter\",\"lastName\":\"Griffin\",\"mobilePhone\":null,\"githubHandle\":\"peter\",\"displayName\":\"Peter Griffin\",\"secondEmail\":null,\"login\":\"PeterGriffin@example.com\",\"email\":\"petergriffin@gmail.com\"},\"credentials\":{\"password\":{},\"emails\":[{\"value\":\"petergriffin@gmail.com\",\"status\":\"VERIFIED\",\"type\":\"PRIMARY\"}],\"recovery_question\":{\"question\":\"What is the food you least liked as a child?\"},\"provider\":{\"type\":\"OKTA\",\"name\":\"OKTA\"}},\"_links\":{\"self\":{\"href\":\"https://my-okta.okta.com/api/v1/users/00udrpjj9fsbpxCoN0h7\"}}},{\"id\":\"00udrpn3yw4Whp8mR0h7\",\"status\":\"ACTIVE\",\"created\":\"2018-01-25T20:24:51.000Z\",\"activated\":\"2018-05-11T13:16:34.000Z\",\"statusChanged\":\"2018-05-11T13:26:48.000Z\",\"lastLogin\":\"2018-05-11T13:26:48.000Z\",\"lastUpdated\":\"2018-06-13T13:27:00.000Z\",\"passwordChanged\":\"2018-05-11T13:26:48.000Z\",\"profile\":{\"firstName\":\"Chris\",\"lastName\":\"Griffin\",\"mobilePhone\":null,\"githubHandle\":\"chris\",\"displayName\":\"Chris Griffin\",\"secondEmail\":null,\"login\":\"ChrisGriffin@example.com\",\"email\":\"chrisgriffin@gmail.com\"},\"credentials\":{\"password\":{},\"emails\":[{\"value\":\"chrisgriffin@gmail.com\",\"status\":\"VERIFIED\",\"type\":\"PRIMARY\"}],\"recovery_question\":{\"question\":\"What is the food you least liked as a child?\"},\"provider\":{\"type\":\"OKTA\",\"name\":\"OKTA\"}},\"_links\":{\"self\":{\"href\":\"https://my-okta.okta.com/api/v1/users/00udrpn3yw4Whp8mR0h7\"}}}]"
+                },
+                "headers": {
+                    "cache-control": [
+                        "no-cache, no-store"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-type": [
+                        "application/json;charset=UTF-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:27 GMT"
+                    ],
+                    "expires": [
+                        "0"
+                    ],
+                    "link": [
+                        "<https://my-okta.okta.com/api/v1/groups/00gezhw5btNc7Dh1N0h7/users?limit=1000>; rel=\"self\""
+                    ],
+                    "p3p": [
+                        "CP=\"HONK\""
+                    ],
+                    "pragma": [
+                        "no-cache"
+                    ],
+                    "public-key-pins-report-only": [
+                        "pin-sha256=\"jZomPEBSDXoipA9un78hKRIeN/+U4ZteRaiX8YpWfqc=\"; pin-sha256=\"axSbM6RQ+19oXxudaOTdwXJbSr6f7AahxbDHFy3p8s8=\"; pin-sha256=\"SE4qe2vdD9tAegPwO79rMnZyhHvqj3i5g1c2HkyGUNE=\"; pin-sha256=\"ylP0lMLMvBaiHn0ihLxHjzvlPVQNoyQ+rMiaj0da/Pw=\"; max-age=60; report-uri=\"https://okta.report-uri.io/r/default/hpkp/reportOnly\""
+                    ],
+                    "server": [
+                        "nginx"
+                    ],
+                    "set-cookie": [
+                        "sid=\"\"; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/, JSESSIONID=2CC1DD474BBC9C8F53F4AA958C53F063; Path=/; HttpOnly"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=315360000"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept-Encoding"
+                    ],
+                    "x-okta-request-id": [
+                        "WyEcc62lT9JJCdlBWTCBqwAABko"
+                    ],
+                    "x-rate-limit-limit": [
+                        "500"
+                    ],
+                    "x-rate-limit-remaining": [
+                        "497"
+                    ],
+                    "x-rate-limit-reset": [
+                        "1528896686"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        },
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:27 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/vnd.github.v3+json"
+                    ],
+                    "Authorization": [
+                        "token <<GITHUB_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Octokit Ruby Gem 4.9.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://api.github.com/users/chris"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "{\"login\":\"chris\",\"id\":329,\"node_id\":\"MDQ6VXNlcjMyOQ==\",\"avatar_url\":\"https://avatars3.githubusercontent.com/u/329?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/chris\",\"html_url\":\"https://github.com/chris\",\"followers_url\":\"https://api.github.com/users/chris/followers\",\"following_url\":\"https://api.github.com/users/chris/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/chris/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/chris/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/chris/subscriptions\",\"organizations_url\":\"https://api.github.com/users/chris/orgs\",\"repos_url\":\"https://api.github.com/users/chris/repos\",\"events_url\":\"https://api.github.com/users/chris/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/chris/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Chris Bailey\",\"company\":\"HotelTonight\",\"blog\":\"http://hoteltonight.com\",\"location\":\"Oregon and San Francisco\",\"email\":\"chris@hoteltonight.com\",\"hireable\":null,\"bio\":\"Co-founder & Chief Architect @ HotelTonight. Ex Adobe, DealBase, Hyperion, etc.\",\"public_repos\":30,\"public_gists\":33,\"followers\":50,\"following\":0,\"created_at\":\"2008-02-17T04:13:11Z\",\"updated_at\":\"2018-05-10T17:42:42Z\"}"
+                },
+                "headers": {
+                    "access-control-allow-origin": [
+                        "*"
+                    ],
+                    "access-control-expose-headers": [
+                        "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval"
+                    ],
+                    "cache-control": [
+                        "private, max-age=60, s-maxage=60"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-security-policy": [
+                        "default-src 'none'"
+                    ],
+                    "content-type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:27 GMT"
+                    ],
+                    "etag": [
+                        "W/\"a8eb12b39fe7c3c75caf1eae72f38656\""
+                    ],
+                    "last-modified": [
+                        "Thu, 10 May 2018 17:42:42 GMT"
+                    ],
+                    "referrer-policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "server": [
+                        "GitHub.com"
+                    ],
+                    "status": [
+                        "200 OK"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept, Authorization, Cookie, X-GitHub-OTP"
+                    ],
+                    "x-accepted-oauth-scopes": [
+                        ""
+                    ],
+                    "x-content-type-options": [
+                        "nosniff"
+                    ],
+                    "x-frame-options": [
+                        "deny"
+                    ],
+                    "x-github-media-type": [
+                        "github.v3; format=json"
+                    ],
+                    "x-github-request-id": [
+                        "F554:7163:779033:F8F883:5B211C73"
+                    ],
+                    "x-oauth-scopes": [
+                        "admin:org, repo"
+                    ],
+                    "x-ratelimit-limit": [
+                        "5000"
+                    ],
+                    "x-ratelimit-remaining": [
+                        "4986"
+                    ],
+                    "x-ratelimit-reset": [
+                        "1528899402"
+                    ],
+                    "x-runtime-rack": [
+                        "0.048453"
+                    ],
+                    "x-xss-protection": [
+                        "1; mode=block"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        },
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:28 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/vnd.github.v3+json"
+                    ],
+                    "Authorization": [
+                        "token <<GITHUB_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Octokit Ruby Gem 4.9.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://api.github.com/users/homer"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "{\"login\":\"homer\",\"id\":6458854,\"node_id\":\"MDQ6VXNlcjY0NTg4NTQ=\",\"avatar_url\":\"https://avatars0.githubusercontent.com/u/6458854?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/homer\",\"html_url\":\"https://github.com/homer\",\"followers_url\":\"https://api.github.com/users/homer/followers\",\"following_url\":\"https://api.github.com/users/homer/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/homer/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/homer/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/homer/subscriptions\",\"organizations_url\":\"https://api.github.com/users/homer/orgs\",\"repos_url\":\"https://api.github.com/users/homer/repos\",\"events_url\":\"https://api.github.com/users/homer/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/homer/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"H. \u00d6mer \u015eensoy\",\"company\":\"@homer\",\"blog\":\"https://osen.soy\",\"location\":\"Istanbul\",\"email\":null,\"hireable\":null,\"bio\":\"Fullstack Developer \u2660 Entrepreneur \u2663 Love to design therefore I code! \u2665 At times I feel like, I work too hard for a person who don't have a job... oh well!\",\"public_repos\":21,\"public_gists\":0,\"followers\":18,\"following\":0,\"created_at\":\"2014-01-21T09:32:45Z\",\"updated_at\":\"2018-04-10T09:54:50Z\"}"
+                },
+                "headers": {
+                    "access-control-allow-origin": [
+                        "*"
+                    ],
+                    "access-control-expose-headers": [
+                        "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval"
+                    ],
+                    "cache-control": [
+                        "private, max-age=60, s-maxage=60"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-security-policy": [
+                        "default-src 'none'"
+                    ],
+                    "content-type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:28 GMT"
+                    ],
+                    "etag": [
+                        "W/\"d55fabbdab92b2be2952fba174142462\""
+                    ],
+                    "last-modified": [
+                        "Tue, 10 Apr 2018 09:54:50 GMT"
+                    ],
+                    "referrer-policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "server": [
+                        "GitHub.com"
+                    ],
+                    "status": [
+                        "200 OK"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept, Authorization, Cookie, X-GitHub-OTP"
+                    ],
+                    "x-accepted-oauth-scopes": [
+                        ""
+                    ],
+                    "x-content-type-options": [
+                        "nosniff"
+                    ],
+                    "x-frame-options": [
+                        "deny"
+                    ],
+                    "x-github-media-type": [
+                        "github.v3; format=json"
+                    ],
+                    "x-github-request-id": [
+                        "F555:7162:4B7864:A3E7F6:5B211C74"
+                    ],
+                    "x-oauth-scopes": [
+                        "admin:org, repo"
+                    ],
+                    "x-ratelimit-limit": [
+                        "5000"
+                    ],
+                    "x-ratelimit-remaining": [
+                        "4985"
+                    ],
+                    "x-ratelimit-reset": [
+                        "1528899402"
+                    ],
+                    "x-runtime-rack": [
+                        "0.060777"
+                    ],
+                    "x-xss-protection": [
+                        "1; mode=block"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        },
+        {
+            "recorded_at": "Wed, 13 Jun 2018 13:30:28 GMT",
+            "request": {
+                "body": {
+                    "encoding": "US-ASCII",
+                    "string": ""
+                },
+                "headers": {
+                    "Accept": [
+                        "application/vnd.github.v3+json"
+                    ],
+                    "Authorization": [
+                        "token <<GITHUB_TOKEN>>"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "User-Agent": [
+                        "Octokit Ruby Gem 4.9.0"
+                    ]
+                },
+                "method": "get",
+                "uri": "https://api.github.com/users/peter"
+            },
+            "response": {
+                "body": {
+                    "encoding": "UTF-8",
+                    "string": "{\"login\":\"peter\",\"id\":2008,\"node_id\":\"MDQ6VXNlcjIwMDg=\",\"avatar_url\":\"https://avatars1.githubusercontent.com/u/2008?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/peter\",\"html_url\":\"https://github.com/peter\",\"followers_url\":\"https://api.github.com/users/peter/followers\",\"following_url\":\"https://api.github.com/users/peter/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/peter/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/peter/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/peter/subscriptions\",\"organizations_url\":\"https://api.github.com/users/peter/orgs\",\"repos_url\":\"https://api.github.com/users/peter/repos\",\"events_url\":\"https://api.github.com/users/peter/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/peter/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Peter Marklund\",\"company\":\"TV4/CMore (Bonnier Broadcasting)\",\"blog\":\"http://marklunds.com\",\"location\":\"Stockholm\",\"email\":\"peter@marklunds.com\",\"hireable\":null,\"bio\":\"Web developer and Data Engineer working in Python, JavaScript/Node.js, Clojure, Scala, Ruby, and Elixir\",\"public_repos\":59,\"public_gists\":47,\"followers\":52,\"following\":0,\"created_at\":\"2008-03-03T14:00:59Z\",\"updated_at\":\"2018-05-31T13:24:02Z\"}"
+                },
+                "headers": {
+                    "access-control-allow-origin": [
+                        "*"
+                    ],
+                    "access-control-expose-headers": [
+                        "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval"
+                    ],
+                    "cache-control": [
+                        "private, max-age=60, s-maxage=60"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "content-security-policy": [
+                        "default-src 'none'"
+                    ],
+                    "content-type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "date": [
+                        "Wed, 13 Jun 2018 13:30:28 GMT"
+                    ],
+                    "etag": [
+                        "W/\"20924fb771b6dbf52c356f4d53611e5e\""
+                    ],
+                    "last-modified": [
+                        "Thu, 31 May 2018 13:24:02 GMT"
+                    ],
+                    "referrer-policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "server": [
+                        "GitHub.com"
+                    ],
+                    "status": [
+                        "200 OK"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "vary": [
+                        "Accept, Authorization, Cookie, X-GitHub-OTP"
+                    ],
+                    "x-accepted-oauth-scopes": [
+                        ""
+                    ],
+                    "x-content-type-options": [
+                        "nosniff"
+                    ],
+                    "x-frame-options": [
+                        "deny"
+                    ],
+                    "x-github-media-type": [
+                        "github.v3; format=json"
+                    ],
+                    "x-github-request-id": [
+                        "F556:7162:4B789F:A3E864:5B211C74"
+                    ],
+                    "x-oauth-scopes": [
+                        "admin:org, repo"
+                    ],
+                    "x-ratelimit-limit": [
+                        "5000"
+                    ],
+                    "x-ratelimit-remaining": [
+                        "4984"
+                    ],
+                    "x-ratelimit-reset": [
+                        "1528899402"
+                    ],
+                    "x-runtime-rack": [
+                        "0.047749"
+                    ],
+                    "x-xss-protection": [
+                        "1; mode=block"
+                    ]
+                },
+                "http_version": null,
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                }
+            }
+        }
+    ],
+    "recorded_with": "VCR 4.0.0"
+}
