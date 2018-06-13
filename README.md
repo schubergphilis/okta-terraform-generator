@@ -1,5 +1,8 @@
 # okta-terraform-generator
 
+[![Build Status](https://travis-ci.org/schubergphilis/okta-terraform-generator.svg?branch=master)](https://travis-ci.org/schubergphilis/okta-terraform-generator)
+[![Gem](https://img.shields.io/gem/v/okta-terraform-generator.svg)](https://rubygems.org/gems/okta-terraform-generator)
+
 A command line helper to generate [Terraform](https://www.terraform.io/) files based on data found in an [Okta](https://www.okta.com/) tenant.
 
 ## Installation
@@ -15,6 +18,27 @@ gem install okta-terraform-generator
 The installed bin writes a file matching the name of the generator used in the current working directory (e.g. `github_membership.tf` when using the `github_membership` generator), so you'll want to be in the directory containing your Terraform plans when running `okta-terraform-generator`.
 
 Running `okta-terraform-generator` will print available generators, running `okta-terraform-generator GENERATOR_NAME` will print generator specific usage.
+
+## Current Generators
+
+The following resource generators are available:
+  * github_membership
+
+### `github_membership`
+
+```
+Usage: okta-terraform-generator github_membership (options)
+
+Options:
+    -h, --github-token GITHUB_TOKEN  Specifies the GitHub API token (required)
+    -a OKTA_GITHUB_ADMIN_GROUP,      Specifies the Okta group containing GitHub admin users (required)
+        --okta-github-admin-group
+    -e OKTA_ENDPOINT,                Specifies the Okta API endpoint (e.g. https://myorg.okta.com/api/v1) (required)
+        --okta-endpoint
+    -g OKTA_GITHUB_USER_GROUP,       Specifies the Okta group containing GitHub users (can be a comma separated list) (required)
+        --okta-github-user-group
+    -t, --okta-token OKTA_TOKEN      Specifies the Okta API token (required)
+```
 
 ## Contributing
 
