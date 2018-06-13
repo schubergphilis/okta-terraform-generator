@@ -14,7 +14,7 @@ notifications:
 branches:
   only:
   - master
-  - /^v\d+\.\d+\.\d+$/
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
 
 before_install: gem install bundler -v 1.16.1
 
@@ -24,3 +24,12 @@ install:
 script:
 - bundle exec rubocop
 - bundle exec rake spec
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: ce//9TbWkYgG93n5qWg1qcTxHeEg/AsW9j5B0gA0BUWkfkfEJODWHiMPPeMhS5v3VZas6CGy44VTWBmSSWsDNxj/wk1evLxnhPhE5JNrBwzqB259zcP3vhm3rk9XlBSC/zcKXJvj7GQF15Qhh/pM8Qr0MXSvYHN0/eHGy+26FImnrR8HaDyDG6EUivvUPZcv7XsffuEGdNqMWM99HWxbuCX3j1QVwx62ZYYTqs5I+kGrW3S3oAlC76yoqyDOR4yDQWVDGdE8k8hJ6xKzSah7W5s+Ywjw7QnpqoSANj2HfN79XJfhS6kt21QPr0+Qa2CRzcBuM1aEQx+J34kf1t8jDMWkIsnnyVBHxxgTxuA+Seem1kj6ZGtaVR9hrLtsTe0zJhprSTCl7aEFw91JnqmO1dKLTXAQJ5h2B1GvEjR8Ajhhf1PYBkiSFD1jwL5pJS4VirwSo6HhHIysK6swqZ/HgtzmCf4oTZsXeF8Ue/YOHpOJVsi0S+BkZx+FoELzuRq5QIWwnMcmbyzV+jAtsLjAbmNhpz0bhwo91uaJOYWlRXOOd2GVOMgLzHbIvJJmF7NNLAu1u+9+MLc88RjksoZvMsgbHfHaOThUATuYr65xfCCSTm9lNfizLdIxBRU5SU8tsgmQxQabu/L98lsPv4d88J7ZCEIfqztLoK//FAPxOIQ=
+  gem: okta-terraform-generator
+  on:
+    tags: true
+    repo: schubergphilis/okta-terraform-generator
