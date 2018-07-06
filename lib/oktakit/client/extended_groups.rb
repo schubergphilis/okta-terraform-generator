@@ -22,9 +22,11 @@ module Oktakit
     module ExtendedGroups
       include Oktakit::Client::Groups
 
+      VALID_STATUSES = %w[ACTIVE LOCKED_OUT PASSWORD_EXPIRED RECOVERY].freeze
+
       def list_active_group_members(group_id)
         list_group_members(group_id).shift.select do |user|
-          user.status == 'ACTIVE'
+          VALID_STATUSES.include?(user.status)
         end
       end
 
