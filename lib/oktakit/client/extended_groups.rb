@@ -24,7 +24,6 @@ module Oktakit
 
       ACTIVE_STATUSES = %w[ACTIVE LOCKED_OUT PASSWORD_EXPIRED RECOVERY].freeze
 
-
       def list_active_group_members(group_id)
         list_group_members(group_id).shift.select do |user|
           active_statuses = ACTIVE_STATUSES.dup
