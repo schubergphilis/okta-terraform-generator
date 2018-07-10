@@ -22,11 +22,14 @@ module Oktakit
     module ExtendedGroups
       include Oktakit::Client::Groups
 
-      VALID_STATUSES = %w[ACTIVE LOCKED_OUT PASSWORD_EXPIRED RECOVERY].freeze
+      ACTIVE_STATUSES = %w[ACTIVE LOCKED_OUT PASSWORD_EXPIRED RECOVERY].freeze
+
 
       def list_active_group_members(group_id)
         list_group_members(group_id).shift.select do |user|
-          VALID_STATUSES.include?(user.status)
+          active_statuses = ACTIVE_STATUSES.dup
+          active_statuses.push('SUSPENDED') if $treat_suspended_as_active
+          active_statuses.include?(user.status)
         end
       end
 
