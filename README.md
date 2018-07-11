@@ -38,6 +38,7 @@ Options:
     -g OKTA_GITHUB_USER_GROUP,       Specifies the Okta group containing GitHub users (can be a comma separated list) (required)
         --okta-github-user-group
     -t, --okta-token OKTA_TOKEN      Specifies the Okta API token (required)
+        --treat-suspended-as-active  Treat suspended users as active
 ```
 
 ## Contributing
