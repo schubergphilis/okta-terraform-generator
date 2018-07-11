@@ -61,6 +61,12 @@ module OktaTerraformGenerator
              description: 'Specifies the Okta API token',
              required: true
 
+      option :treat_suspended_as_active,
+             long: '--treat-suspended-as-active',
+             boolean: true,
+             description: 'Treat suspended users as active',
+             proc: proc { |treat_suspended_as_active| $treat_suspended_as_active = true if treat_suspended_as_active }
+
       def run(argv = ARGV.dup)
         if argv.size == 1
           print_usage

@@ -19,6 +19,7 @@ RSpec.describe OktaTerraformGenerator::CLI::GithubMembership do
           -g OKTA_GITHUB_USER_GROUP,       Specifies the Okta group containing GitHub users (can be a comma separated list) (required)
               --okta-github-user-group
           -t, --okta-token OKTA_TOKEN      Specifies the Okta API token (required)
+              --treat-suspended-as-active  Treat suspended users as active
     STDOUT
   end
 
@@ -40,6 +41,61 @@ RSpec.describe OktaTerraformGenerator::CLI::GithubMembership do
        '-t', test_okta_token,
        '-g', test_okta_github_users,
        '-a', test_okta_github_admins]
+    end
+
+    let(:expected_resources) do
+      {
+        'resource' => {
+          'github_membership' => {
+            'bartsimpson' => {
+              'username' => 'bart',
+              'role' => 'member'
+            },
+            'homersimpson' => {
+              'username' => 'homer',
+              'role' =>  'member'
+            },
+            'petergriffin' => {
+              'username' => 'peter',
+              'role' => 'admin'
+            }
+          }
+        }
+      }
+    end
+
+    it 'prints expected msgs to stdout' do
+      VCR.use_cassette 'github_membership' do
+        expect(STDOUT).to receive(:puts).with([
+          'Looking for active users in Okta group "github_users" (with group id: 00gezhx0w8mt5gjke0h7)',
+          'and the "githubHandle" profile attribute set ... '
+        ].join(' '))
+        expect(STDOUT).to receive(:puts).with("\nWrote generated JSON to github_membership.tf")
+        subject.run(argv)
+      end
+    end
+
+    it 'writes a github_membership.tf file with expected content' do
+      VCR.use_cassette 'github_membership' do
+        expect(STDOUT).to receive(:puts).with([
+          'Looking for active users in Okta group "github_users" (with group id: 00gezhx0w8mt5gjke0h7)',
+          'and the "githubHandle" profile attribute set ... '
+        ].join(' '))
+        expect(subject).to receive(:write_tf_file).with('github_membership.tf', expected_resources)
+        subject.run(argv)
+      end
+    end
+  end
+
+  describe 'when --treat-suspended-as-active option is given' do
+    let(:argv) do
+      ['github_membership',
+       '-e', test_okta_endpoint,
+       '-h', test_github_token,
+       '-t', test_okta_token,
+       '-g', test_okta_github_users,
+       '-a', test_okta_github_admins,
+       '--treat-suspended-as-active']
     end
 
     let(:expected_resources) do
